@@ -1,5 +1,5 @@
 {% set name = "pygris" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pygris-{{ version }}.tar.gz
-  sha256: 4108dabe68a2b71a10250694a41ae86680f2ad1f9655bad4f6bc8f27fcb45415
+  sha256: d0a6893b60a4f10c1fda1939228450a89b4c6f6c7a7afcbad441da24666d30d0
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >={{ python_min }}
     - geopandas >=0.9
     - requests
-    - appdirs
+    - platformdirs
 
 test:
   imports:
