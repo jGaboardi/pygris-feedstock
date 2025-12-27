@@ -23,7 +23,7 @@ requirements:
     - python >={{ python_min }}
     - geopandas >=0.9
     - requests
-    - appdirs
+    - platformdirs
 
 test:
   imports:
